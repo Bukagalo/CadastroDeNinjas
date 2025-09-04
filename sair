@@ -1,0 +1,23 @@
+[33mcommit 3d89b6559ca8fb2bc305c4b707d4e032f20a1f0a[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Bukagalo <valterbartolinipessoal@gmail.com>
+Date:   Thu Sep 4 14:03:21 2025 -0300
+
+    Modelagem de dados , NinjaModel e MissoesModel concluidos,@Anotarions feitas para delacionamento de tabelas
+
+[33mcommit fb58618ef29775506961eb6abf54046f7cae2666[m
+Author: Bukagalo <valterbartolinipessoal@gmail.com>
+Date:   Thu Sep 4 11:18:29 2025 -0300
+
+    Cria uma entidade no banco de dados a partir do NinjaModel AULA03
+
+[33mcommit 792febedaae27063ed4202930dc9e51f20e5eafb[m
+Author: Bukagalo <valterbartolinipessoal@gmail.com>
+Date:   Mon Aug 18 15:33:29 2025 -0300
+
+    Criado a controller - aula 02
+
+[33mcommit ddc7ddd01a084a2460b6a39f92c0204bbffc83b1[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: Bukagalo <valterbartolinipessoal@gmail.com>
+Date:   Mon Aug 18 13:41:37 2025 -0300
+
+    Primeiro commit
