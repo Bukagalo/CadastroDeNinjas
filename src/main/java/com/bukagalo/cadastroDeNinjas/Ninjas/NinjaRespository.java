@@ -1,4 +1,6 @@
 package com.bukagalo.cadastroDeNinjas.Ninjas;
 
-public interface NInjaRespository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface NinjaRespository extends JpaRepository<NinjaModel,Long> {
 }

@@ -2,9 +2,16 @@ package com.bukagalo.cadastroDeNinjas.Ninjas;
 
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
-@RequestMapping
+@RequestMapping("/ninjas")
 public class NinjaController {
+    private NinjaService ninjaService;
+
+    public NinjaController(NinjaService ninjaService) {
+        this.ninjaService = ninjaService;
+    }
 
     @GetMapping("/boasVindas")
     public String boasVindas(){
@@ -21,10 +28,14 @@ public String criarNinja() {
 
 
     // Mostrar todos os  ninjas (READ)
-    @GetMapping("/Listartodos")
-    public String mostrarNijas(){
-        return "Todos os Ninjas";
-    }
+    @GetMapping("/Listar")
+    public List<NinjaModel> ListarNijas(){
+
+                    return ninjaService.listarNinjas();
+
+
+        }
+
 
 
     // Mostrar Ninjas por ID (READ)
