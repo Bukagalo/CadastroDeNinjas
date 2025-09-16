@@ -36,7 +36,14 @@ public String criarNinja() {
 
         }
 
+//EXIBINDO NINJA ESPECIFICO POR ID
 
+@GetMapping("/listar/{id}")
+public NinjaModel listarPorId(@PathVariable Long id){
+
+        return ninjaService.listarPorId(id);
+
+}
 
     // Mostrar Ninjas por ID (READ)
 
