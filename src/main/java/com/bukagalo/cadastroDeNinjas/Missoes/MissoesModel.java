@@ -1,6 +1,7 @@
 package com.bukagalo.cadastroDeNinjas.Missoes;
 
 import com.bukagalo.cadastroDeNinjas.Ninjas.NinjaModel;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -23,6 +24,7 @@ public class MissoesModel {
 
     // Cada missão pode estar vinculado a MUITOS NINJAS
     @OneToMany(mappedBy = "missoes")
+    @JsonIgnore
     private List<NinjaModel> ninjas ;
 
 
