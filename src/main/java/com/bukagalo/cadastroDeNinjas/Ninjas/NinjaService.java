@@ -9,13 +9,12 @@ import java.util.Optional;
 @Service
 public class NinjaService {
 
-    private NinjaRespository ninjaRepository;
+    private NinjaRepository ninjaRepository;
 
-    public NinjaService(NinjaRespository ninjaRepository) {
+    public NinjaService(NinjaRepository ninjaRepository) {
         this.ninjaRepository = ninjaRepository;
     }
 
-    @Autowired
 
     // LISTAR TODOS OS NINJAS
 
@@ -31,5 +30,9 @@ public class NinjaService {
         Optional<NinjaModel> ninjaModel = ninjaRepository.findById(id);
         return ninjaModel.orElse(null);
 
+    }
+
+    public NinjaModel criarNinja (NinjaModel ninja){
+        return ninjaRepository.save(ninja);
     }
 }
